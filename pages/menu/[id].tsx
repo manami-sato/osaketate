@@ -1,7 +1,12 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import { menuNav } from '../../src/libs/menu';
+import MenuComponents from '../../src/components/MenuComponents';
 import { menuNavItemTypes } from '../../src/types/menu';
+import Head from '../../src/components/Head';
+import FootOrder from '../../src/components/FootOrder';
+import MenuHeading from '../../src/components/MenuHeading';
+import OriginalSpacer from '../../src/components/OriginalSpacer';
 
 type Props = {
   data: menuNavItemTypes;
@@ -9,10 +14,13 @@ type Props = {
 
 const Home: NextPage<Props> = ({ data }) => {
   return (
-    <>
-      <Text as="h2">{data.title}</Text>
-      {/* <Box as="img" src={food_01.jpeg}></Box> */}
-    </>
+    <Box w="90vw" mx="auto" pt="96px">
+      <Head />
+      <MenuHeading data={data.title} index={data.id.length} />
+      <OriginalSpacer size="24px" />
+      <MenuComponents index={data.id} />
+      <FootOrder />
+    </Box>
   );
 };
 

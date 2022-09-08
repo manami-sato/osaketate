@@ -1,7 +1,14 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const colors = {
-  example: 'tomato',
+  black: '#333333',
+  gray: '#9F9F9F',
+  lightGray: '#F4F4F4',
+  white: '#FFFFFF',
+  blue: '#232F9C',
+  purple: '#8B3AF2',
+  orange: '#F2923A',
+  yellow: '#FDEB48',
 };
 const styles = {
   global: {

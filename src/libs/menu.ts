@@ -29,7 +29,7 @@ export const menuNav: menuNavTypes[] = [
   },
 ];
 
-export const menu: menuTypes[] = [
+export const drinkMenu: menuTypes[] = [
   {
     id: 1,
     title: 'レモンサワー',
