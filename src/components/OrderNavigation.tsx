@@ -9,13 +9,8 @@ const OrderNavigation: FC = () => {
   return (
     <Flex flexDirection="column" gap="24px" w="90vw" mx="auto">
       {menuNav.map((type: menuNavTypes, i: number) => (
-        <Flex
-          key={type.title + i}
-          flexDirection="column"
-          gap="12px"
-          fontSize="1.6rem"
-        >
-          <Flex as="h2" fontWeight="bold">
+        <Flex key={type.title + i} flexDirection="column" gap="12px">
+          <Flex as="h2" fontWeight="bold" fontSize="1.6rem">
             {type.title}
           </Flex>
           <Flex as="ul" flexWrap="wrap" gap="8px">
