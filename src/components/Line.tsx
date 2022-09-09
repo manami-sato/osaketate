@@ -4,7 +4,7 @@ import { imgPath } from '../libs/imgPath';
 
 const Line: FC = () => {
   return (
-    <Flex h="80px" w="90vw">
+    <Flex justifyContent="center" alignItems="center" w="90vw" h="80px" mx="auto">
       <Box
         as="img"
         src={imgPath + 'line.png'}

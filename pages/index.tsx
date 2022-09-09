@@ -34,7 +34,9 @@ const Home: NextPage = () => {
       <OriginalSpacer size="16px" />
       <Box w="100%" h="208px" bg="lightGray" />
       <OrderNavigation />
+      <OriginalSpacer size="24px" />
       <Line />
+      <OriginalSpacer size="32px" />
       <Foot />
       <FootOrder />
     </Box>
