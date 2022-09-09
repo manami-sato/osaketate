@@ -8,6 +8,7 @@ import { imgPath } from '../src/libs/imgPath';
 import OriginalSpacer from '../src/components/OriginalSpacer';
 import OrderNavigation from '../src/components/OrderNavigation';
 import Foot from '../src/components/Foot';
+import Line from '../src/components/Line';
 
 const Home: NextPage = () => {
   return (
@@ -33,8 +34,9 @@ const Home: NextPage = () => {
       <OriginalSpacer size="16px" />
       <Box w="100%" h="208px" bg="lightGray" />
       <OrderNavigation />
-      <FootOrder />
+      <Line />
       <Foot />
+      <FootOrder />
     </Box>
   );
 };

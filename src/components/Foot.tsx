@@ -10,7 +10,6 @@ const Foot: FC = () => {
       alignItems="center"
       w="100vw"
       bg="gray"
-      // bg="blue"
       h="64px"
     >
       <Text color="white" fontSize="2rem">
