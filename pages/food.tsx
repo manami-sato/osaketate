@@ -14,7 +14,7 @@ type Props = {
 
 const Food: NextPage = () => {
   return (
-    <Box w="90vw" mx="auto" pt="96px">
+    <Box as="main">
       <Head />
       <MenuHeading data="おつまみ" index={foodMenu.length} />
       <OriginalSpacer size="24px" />

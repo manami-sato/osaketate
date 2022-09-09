@@ -5,7 +5,8 @@ const colors = {
   gray: '#9F9F9F',
   lightGray: '#F4F4F4',
   white: '#FFFFFF',
-  blue: '#232F9C',
+  // blue: '#232F9C',
+  blue: '#323063',
   purple: '#8B3AF2',
   orange: '#F2923A',
   yellow: '#FDEB48',
@@ -19,6 +20,11 @@ const styles = {
       color: 'black',
       fontSize: '1.4rem',
       fontFamily: 'body',
+      main: {
+        width: '90vw',
+        margin: '0 auto',
+        padding: '96px 0 0',
+      },
       a: {
         textDecoration: 'none',
       },

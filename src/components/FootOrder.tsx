@@ -3,13 +3,16 @@ import { FC, useEffect, useState } from 'react';
 
 import NextLink from 'next/link';
 
-type Props = {
-  data?: number[];
-};
-
-const FootOrder: FC<Props> = ({ data }) => {
+const FootOrder: FC = () => {
   return (
-    <Flex w="100%" h="88px" bg="lightGray" pos="fixed" inset="auto 0 0 0">
+    <Flex
+      w="100%"
+      h="88px"
+      bg="lightGray"
+      pos="fixed"
+      inset="auto 0 0 0"
+      boxShadow="0 0 12px rgba(0, 0, 0, 0.2)"
+    >
       <Flex
         justifyContent="center"
         alignItems="center"

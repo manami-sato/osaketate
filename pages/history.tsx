@@ -12,7 +12,7 @@ const orderList = [1, 2, 3];
 const Order: NextPage = () => {
   return (
     <>
-      <Box w="90vw" mx="auto" pt="96px">
+      <Box as="main">
         <Head />
         <MenuHeading data="注文履歴" />
         <OriginalSpacer size="24px" />

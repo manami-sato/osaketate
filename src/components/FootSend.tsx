@@ -18,6 +18,7 @@ const FootOrder: FC<Props> = ({ data }) => {
       fontWeight="bold"
       pos="fixed"
       inset="auto 0 0 0"
+      boxShadow="0 0 12px rgba(0, 0, 0, 0.1)"
     >
       {data}
     </Flex>

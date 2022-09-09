@@ -11,16 +11,14 @@ const orderList = [1, 2, 3];
 
 const Order: NextPage = () => {
   return (
-    <>
-      <Box w="90vw" mx="auto" pt="96px">
-        <Head />
-        <MenuHeading data="注文確認" />
-        <OriginalSpacer size="24px" />
-        <OrderComponents data={orderList} />
-      </Box>
+    <Box as="main">
+      <Head />
+      <MenuHeading data="注文確認" />
+      <OriginalSpacer size="24px" />
+      <OrderComponents data={orderList} />
       <FootCheck data={orderList} />
       <FootSend data="注文確定" />
-    </>
+    </Box>
   );
 };
 
