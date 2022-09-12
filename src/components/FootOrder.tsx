@@ -7,7 +7,7 @@ const FootOrder: FC = () => {
   return (
     <Flex
       w="100%"
-      h="88px"
+      h="80px"
       bg="lightGray"
       pos="fixed"
       inset="auto 0 0 0"

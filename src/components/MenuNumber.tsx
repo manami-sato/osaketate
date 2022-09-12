@@ -2,12 +2,24 @@ import { Flex, Text } from '@chakra-ui/react';
 import { FC, useEffect, useState } from 'react';
 
 const MenuNumber: FC = () => {
+  const [count, setCount] = useState<number>(0);
+
+  const countDown = () => {
+    if (count !== 0) {
+      setCount(count - 1);
+    }
+  };
+
+  const countUp = () => {
+    setCount(count + 1);
+  };
+
   return (
     <Flex
       justifyContent="space-between"
       alignItems="center"
       sx={{
-        '>div': {
+        '>button': {
           justifyContent: 'center',
           alignItems: 'center',
           width: '48px',
@@ -31,6 +43,7 @@ const MenuNumber: FC = () => {
       }}
     >
       <Flex
+        as="button"
         sx={{
           '&::after': {
             content: "''",
@@ -38,6 +51,7 @@ const MenuNumber: FC = () => {
             height: '2px',
           },
         }}
+        onClick={() => countDown()}
       />
       <Text
         display="flex"
@@ -46,10 +60,11 @@ const MenuNumber: FC = () => {
         fontSize="1.6rem"
         fontWeight="bold"
       >
-        0
+        {count}
       </Text>
       <Flex
-        bg="orange"
+        as="button"
+        // bg="orange"
         sx={{
           '&::before': {
             content: "''",
@@ -62,6 +77,7 @@ const MenuNumber: FC = () => {
             height: '2px',
           },
         }}
+        onClick={() => countUp()}
       />
     </Flex>
   );

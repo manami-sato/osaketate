@@ -23,7 +23,6 @@ const styles = {
       main: {
         width: '90vw',
         margin: '0 auto',
-        padding: '96px 0 0',
       },
       a: {
         textDecoration: 'none',

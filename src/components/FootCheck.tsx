@@ -25,12 +25,12 @@ const FootOrder: FC<Props> = ({ data }) => {
       justifyContent="space-between"
       alignItems="center"
       w="100%"
-      h="64px"
+      h="56px"
       bg="white"
       fontWeight="bold"
       px="10vw"
       pos="fixed"
-      inset="auto 0 88px 0"
+      inset="auto 0 80px 0"
       boxShadow="0 0 12px rgba(0, 0, 0, 0.1)"
     >
       <Flex alignItems="flex-end">

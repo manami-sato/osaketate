@@ -25,7 +25,7 @@ const OrderNavigation: FC = () => {
                 borderRadius="9999px"
               >
                 <NextLink href={'/menu/' + item.path} passHref>
-                  <Text as="a" display="flex" w="100%" p="12px 24px">
+                  <Text as="a" display="flex" w="100%" p="10px 24px">
                     {item.title}
                   </Text>
                 </NextLink>
