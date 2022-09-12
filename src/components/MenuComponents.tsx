@@ -27,13 +27,19 @@ const MenuComponents: FC<Props> = ({ index, data }) => {
   }
 
   return (
-    <Flex as="ul" gap="5%">
+    <Flex
+      as="ul"
+      // gap="5%"
+      flexWrap="wrap"
+      justifyContent="space-between"
+    >
       {hoge.map((item: menuTypes) => (
         <Flex
           as="li"
           key={item.title}
           flexDirection="column"
           w="calc((100% - 5%)/2)"
+          mb="20px"
         >
           <Flex w="100%" pt="75%" pos="relative">
             <Flex

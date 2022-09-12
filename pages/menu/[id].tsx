@@ -7,6 +7,7 @@ import Head from '../../src/components/Head';
 import FootOrder from '../../src/components/FootOrder';
 import MenuHeading from '../../src/components/MenuHeading';
 import OriginalSpacer from '../../src/components/OriginalSpacer';
+import OrderNavigation from '../../src/components/OrderNavigation';
 
 type Props = {
   data: menuNavItemTypes;
@@ -14,11 +15,20 @@ type Props = {
 
 const Home: NextPage<Props> = ({ data }) => {
   return (
-    <Box w="90vw" mx="auto" pt="96px">
+    <Box w="90vw" mx="auto" p="96px 0 120px">
       <Head />
       <MenuHeading data={data.title} index={data.id.length} />
       <OriginalSpacer size="24px" />
       <MenuComponents index={data.id} />
+      <OriginalSpacer size="24px" />
+      <Box
+        borderBottomStyle="solid"
+        borderBottomWidth="3px"
+        borderBottomColor="lightGray"
+      />
+      <OriginalSpacer size="16px" />
+      <OrderNavigation />
+      <OriginalSpacer size="24px" />
       <FootOrder />
     </Box>
   );

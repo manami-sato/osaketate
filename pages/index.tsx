@@ -33,6 +33,7 @@ const Home: NextPage = () => {
       </NextLink>
       <OriginalSpacer size="16px" />
       <Box w="100%" h="208px" bg="lightGray" />
+      <OriginalSpacer size="24px" />
       <OrderNavigation />
       <OriginalSpacer size="24px" />
       <Line />

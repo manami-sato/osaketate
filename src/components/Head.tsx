@@ -19,6 +19,7 @@ const Head: FC = () => {
       borderBottomWidth="2px"
       pos="fixed"
       inset="0 0 auto 0"
+      zIndex="10"
     >
       <NextLink href="/" passHref>
         <Flex as="a" h="30%">
