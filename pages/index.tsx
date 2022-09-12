@@ -12,7 +12,7 @@ import Line from '../src/components/Line';
 
 const Home: NextPage = () => {
   return (
-    <Box py="88px">
+    <Box p="88px 0 80px">
       <Head />
       <NextLink href="/food" passHref>
         <Flex

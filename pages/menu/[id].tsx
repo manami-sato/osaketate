@@ -15,7 +15,7 @@ type Props = {
 
 const Home: NextPage<Props> = ({ data }) => {
   return (
-    <Box w="90vw" mx="auto" p="96px 0 114px">
+    <Box w="90vw" mx="auto" p="96px 0 120px">
       <Head />
       <MenuHeading data={data.title} index={data.id.length} />
       <OriginalSpacer size="24px" />
