@@ -16,10 +16,9 @@ const Home: NextPage = () => {
       <Head />
       <FoodBunner />
       <OriginalSpacer size="16px" />
-      {/* <Box w="100%" h="208px" bg="lightGray" /> */}
       <Box
         as="img"
-        src={imgPath + 'bnr_01.png'}
+        src={imgPath + 'bnr_02.png'}
         w="100%"
         h="240px"
         bg="lightGray"
