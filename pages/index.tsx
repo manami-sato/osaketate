@@ -8,6 +8,7 @@ import Foot from '../src/components/Foot';
 import Line from '../src/components/Line';
 import Border from '../src/components/Border';
 import FoodBunner from '../src/components/FoodBunner';
+import { imgPath } from '../src/libs/imgPath';
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +16,15 @@ const Home: NextPage = () => {
       <Head />
       <FoodBunner />
       <OriginalSpacer size="16px" />
-      <Box w="100%" h="208px" bg="lightGray" />
+      {/* <Box w="100%" h="208px" bg="lightGray" /> */}
+      <Box
+        as="img"
+        src={imgPath + 'bnr_01.png'}
+        w="100%"
+        h="240px"
+        bg="lightGray"
+        objectFit="cover"
+      />
       <OriginalSpacer size="24px" />
       <OrderNavigation />
       <OriginalSpacer size="24px" />
