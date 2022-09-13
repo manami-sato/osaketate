@@ -24,12 +24,11 @@ const Order: NextPage = () => {
   return (
     <>
       <Box as="main" pt="40px">
-        {/* <Head /> */}
         <Back />
         <OriginalSpacer size="4px" />
         <MenuHeading data="注文確認" />
         <OriginalSpacer size="24px" />
-        <OrderComponents data={orderList} />
+        <OrderComponents data={orderList} history={false} />
         <FootCheck data={orderList} />
         <AttentionModal index={0} />
         <FootSend data="注文確定" changeState={changeState} />

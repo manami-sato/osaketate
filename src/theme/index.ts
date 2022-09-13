@@ -41,6 +41,7 @@ const styles = {
 };
 const fonts = {
   body: "'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif",
+  price: "'Anton', sans-serif",
 };
 const breakpoints = {
   sm: '500px',

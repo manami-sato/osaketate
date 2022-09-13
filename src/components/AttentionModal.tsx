@@ -32,7 +32,6 @@ const Line: FC<Props> = ({ index }) => {
       {data.url !== undefined && (
         <Text
           color="orange"
-          // fontWeight="bold"
           fontSize="1.3rem"
           textDecoration="underline"
         >

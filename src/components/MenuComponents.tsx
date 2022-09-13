@@ -1,5 +1,5 @@
 import { Flex, Text } from '@chakra-ui/react';
-import { FC, useEffect, useState } from 'react';
+import { FC } from 'react';
 import { imgPath } from '../libs/imgPath';
 import { drinkMenu } from '../libs/menu';
 import { menuTypes } from '../types/menu';
@@ -9,10 +9,10 @@ import OriginalSpacer from './OriginalSpacer';
 type Props = {
   index?: number[];
   data?: menuTypes[];
+  history: boolean;
 };
 
-const MenuComponents: FC<Props> = ({ index, data }) => {
-  // const [drink, setDrink] = useState([{}]);
+const MenuComponents: FC<Props> = ({ index, data, history }) => {
   let hoge: any = [];
   if (index !== undefined) {
     hoge = drinkMenu.filter((item: any) => {
@@ -29,7 +29,6 @@ const MenuComponents: FC<Props> = ({ index, data }) => {
   return (
     <Flex
       as="ul"
-      // gap="5%"
       flexWrap="wrap"
       justifyContent="space-between"
     >
@@ -64,7 +63,7 @@ const MenuComponents: FC<Props> = ({ index, data }) => {
             ¥{item.price}
           </Text>
           <OriginalSpacer size="16px" />
-          <MenuNumber />
+          <MenuNumber history={history} />
         </Flex>
       ))}
     </Flex>

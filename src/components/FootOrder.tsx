@@ -1,5 +1,5 @@
 import { Flex, Text } from '@chakra-ui/react';
-import { FC, useEffect, useState } from 'react';
+import { FC } from 'react';
 
 import NextLink from 'next/link';
 
@@ -19,8 +19,15 @@ const FootOrder: FC = () => {
         w="calc(100% - 120px)"
         sx={{
           '>div': {
+            justifyContent: 'center',
+            alignItems: 'center',
             height: '60%',
+            color: 'orange',
             background: 'white',
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            fontFamily: 'price',
+            letterSpacing: '0.1rem',
           },
           '>p': {
             display: 'flex',
@@ -30,9 +37,9 @@ const FootOrder: FC = () => {
           },
         }}
       >
-        <Flex w="48px" />
+        <Flex w="48px">3</Flex>
         <Text m="0 16px 0 8px">点</Text>
-        <Flex w="72px" />
+        <Flex w="72px">1400</Flex>
         <Text m="0 0 0 8px">円</Text>
       </Flex>
       <NextLink href="/order" passHref>

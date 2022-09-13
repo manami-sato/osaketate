@@ -9,6 +9,7 @@ import OrderModal from '../src/components/OrderModal';
 import OriginalSpacer from '../src/components/OriginalSpacer';
 
 import order from '../src/assets/svg/icon_order';
+import Back from '../src/components/Back';
 
 const orderList = [1, 2, 3];
 
@@ -20,18 +21,17 @@ const Order: NextPage = () => {
   return (
     <>
       <Box as="main" pt="40px">
+        <Back />
+        <OriginalSpacer size="4px" />
         <MenuHeading data="注文履歴" />
         <OriginalSpacer size="24px" />
-        <OrderComponents data={orderList} />
+        <OrderComponents data={orderList} history={true} />
       </Box>
       <FootCheck data={orderList} />
       <FootSend
         data="会計に進む（同テーブルの注文ストップ）"
         changeState={changeState}
       />
-      {/* {windowFlag && (
-        <Flex>お会計に進みますか？（これ以降の注文はできません）</Flex>
-      )} */}
       {windowFlag && (
         <OrderModal
           title="お会計ができます！"

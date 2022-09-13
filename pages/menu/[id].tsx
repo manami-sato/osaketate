@@ -8,6 +8,7 @@ import FootOrder from '../../src/components/FootOrder';
 import MenuHeading from '../../src/components/MenuHeading';
 import OriginalSpacer from '../../src/components/OriginalSpacer';
 import OrderNavigation from '../../src/components/OrderNavigation';
+import Border from '../../src/components/Border';
 
 type Props = {
   data: menuNavItemTypes;
@@ -19,15 +20,11 @@ const Home: NextPage<Props> = ({ data }) => {
       <Head />
       <MenuHeading data={data.title} index={data.id.length} />
       <OriginalSpacer size="24px" />
-      <MenuComponents index={data.id} />
+      <MenuComponents index={data.id} history={false} />
       <OriginalSpacer size="24px" />
-      <Box
-        borderBottomStyle="solid"
-        borderBottomWidth="3px"
-        borderBottomColor="lightGray"
-      />
-      <OriginalSpacer size="16px" />
-      <OrderNavigation />
+      <Border />
+      <OriginalSpacer size="24px" />
+      <OrderNavigation food />
       <OriginalSpacer size="24px" />
       <FootOrder />
     </Box>

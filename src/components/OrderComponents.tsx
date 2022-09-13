@@ -8,9 +8,10 @@ import OriginalSpacer from './OriginalSpacer';
 
 type Props = {
   data: number[];
+  history: boolean;
 };
 
-const OrderComponents: FC<Props> = ({ data }) => {
+const OrderComponents: FC<Props> = ({ data, history }) => {
   let hoge: any = [];
   hoge = drinkMenu.filter((item: any) => {
     for (let i = 0; i < data.length; i++) {
@@ -32,7 +33,7 @@ const OrderComponents: FC<Props> = ({ data }) => {
             ...(i < hoge.length - 1 && {
               '&:after': {
                 content: "''",
-                width: '90%',
+                width: '95%',
                 height: '2px',
                 background: 'lightGray',
                 margin: '16px auto 0',
@@ -50,7 +51,7 @@ const OrderComponents: FC<Props> = ({ data }) => {
             </Text>
           </Box>
           <OriginalSpacer size="16px" />
-          <MenuNumber />
+          <MenuNumber history={history} />
         </Flex>
       ))}
     </Flex>

@@ -2,10 +2,14 @@ import { Flex, Text } from '@chakra-ui/react';
 import { FC } from 'react';
 import { menuNav } from '../libs/menu';
 import { menuNavItemTypes, menuNavTypes } from '../types/menu';
-import OriginalSpacer from './OriginalSpacer';
 import NextLink from 'next/link';
+import FoodBunner from './FoodBunner';
 
-const OrderNavigation: FC = () => {
+type Props = {
+  food?: boolean;
+};
+
+const OrderNavigation: FC<Props> = ({ food }) => {
   return (
     <Flex flexDirection="column" gap="24px" w="90vw" mx="auto">
       {menuNav.map((type: menuNavTypes, i: number) => (
@@ -34,6 +38,7 @@ const OrderNavigation: FC = () => {
           </Flex>
         </Flex>
       ))}
+      {food && <FoodBunner />}
     </Flex>
   );
 };

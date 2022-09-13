@@ -34,17 +34,31 @@ const FootOrder: FC<Props> = ({ data }) => {
       boxShadow="0 0 12px rgba(0, 0, 0, 0.1)"
     >
       <Flex alignItems="flex-end">
-        <Text>計</Text>
-        <Text color="orange" fontSize="2.2rem" lineHeight="2.2rem" mx="4px">
+        <Text lineHeight="1.4rem">計</Text>
+        <Text
+          color="orange"
+          fontSize="2.6rem"
+          lineHeight="2.6rem"
+          mx="4px"
+          fontFamily="price"
+          letterSpacing="0.1rem"
+        >
           {data.length}
         </Text>
-        <Text>点</Text>
+        <Text lineHeight="1.4rem">点</Text>
       </Flex>
       <Flex alignItems="flex-end">
-        <Text color="orange" fontSize="2.2rem" lineHeight="2.2rem" mx="4px">
+        <Text
+          color="orange"
+          fontSize="2.6rem"
+          lineHeight="2.6rem"
+          mx="4px"
+          fontFamily="price"
+          letterSpacing="0.1rem"
+        >
           {price}
         </Text>
-        <Text>円</Text>
+        <Text lineHeight="1.4rem">円</Text>
       </Flex>
     </Flex>
   );
