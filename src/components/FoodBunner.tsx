@@ -16,7 +16,7 @@ const FootOrder: FC = () => {
       >
         <Box
           as="img"
-          src={imgPath + '/food_01.jpeg'}
+          src={imgPath + 'bnr_03.png'}
           w="90vw"
           h="100%"
           objectFit="cover"
