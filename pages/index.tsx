@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <OriginalSpacer size="16px" />
       <Box
         as="img"
-        src={imgPath + 'bnr_02.png'}
+        src={imgPath + 'bnr_01.png'}
         w="100%"
         // h="240px"
         bg="lightGray"
